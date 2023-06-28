@@ -6,10 +6,9 @@ on:
       - master
       - dev  
   pull_request:
-    branches:
-      - main
-      - master
-      - dev
+    types:
+      - opened
+      - synchronize
 jobs:
   build:
     runs-on: ubuntu-latest
