@@ -1,14 +1,12 @@
 name: Checkmarx One Scan Ido
 on:
-  push:
-    branches:
-      - main
-      - master
-      - dev  
   pull_request:
     types:
       - opened
       - synchronize
+  push:
+    branches:
+      - master
 jobs:
   build:
     runs-on: ubuntu-latest
